@@ -1,0 +1,12 @@
+-> Creazione del substrato;      - S
+-> Crescita dell'ossido;         - S
+-> Silicon Layer;                - S 
+-> gate oxide layer;             - S
+-> poly;                         - S     
+-> LDD;                               - D
+-> spacers;                           - D
+-> raised source & drain epitaxies;   - D
+-> source & drain implants;           - D
+-> planarization;                          - F  
+-> replace metal gate;                     - F
+-> contacts;                               - F
