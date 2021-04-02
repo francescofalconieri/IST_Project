@@ -7,6 +7,8 @@
 -> spacers;                           - D
 -> raised source & drain epitaxies;   - D
 -> source & drain implants;           - D
+-> silicidation;                      - D
 -> planarization;                          - F  
 -> replace metal gate;                     - F
+-> self aligning contacts                  - F
 -> contacts;                               - F
