@@ -153,7 +153,27 @@ WritePlx n@node@_anneal_sd.plx y= [expr 0.2-($Lg2-0.01)] Silicon
 SetPlxList {BTotal}
 WritePlx n@node@_anneal_sub.plx y= 0.0 Silicon
 # -------------------------------------------------------------------- #
+## ---------- Silicidation ---------------------------------------------
+deposit Nickel type= isotropic thickness= 0.01 selective.material= Silicon
+struct tdr= 21_Nickel_depo ; #
 
+pdbSet NickelSilicide Grid perp.add.dist 0.001e-4
+pdbSet Silicon Grid perp.add.dist 0.001e-4
+pdbSet Silicon Grid Remove.Dist 0.0005e-4
+
+pdbSet NickelSilicide Silicon Dstar { {[Arr 0.011  1.6]} }
+pdbSet NickelSilicide_Silicon Silicon Expansion.Ratio 1.0
+pdbSet Nickel_NickelSilicide  Silicon Expansion.Ratio 1.0
+
+pdbSet NickelSilicide_Silicon SilicidationTripleFactor 0
+pdbSet NickelSilicide_Silicon SilicidationTripleDistance 15e-7
+pdbSet Nickel_NickelSilicide  SilicidationTripleDistance 15e-7
+
+diffuse time= 1<min>  temperature= 450  ramprate= [ expr 20.0 - 450.0 ]<C/min> minT=500
+struct tdr= 22_Nickel_diffuse ; #
+
+strip Nickel
+struct tdr= 23_Strip_Nickel ; #
 #-----------------------------------------------------------------------------------
 
 #------------------- START GATE STACK ----------------------------------------------
@@ -162,7 +182,7 @@ grid set.min.normal.size= 1<nm> set.normal.growth.ratio.2d= 1.5
 mgoals accuracy= 1e-5
 pdbSet Oxide Grid perp.add.dist 1e-7
 pdbSet Grid NativeLayerThickness 1e-7
-diffuse temperature= 700<C> time= 1.0<min> O2 
+diffuse temperature= 850<C> time= 10.0<min> O2 
 struct tdr= 25_Planariz_Seed_Layer ; #
 # OXIDE CVD FOR PLANARIZATION
 deposit material= {Oxide} type= isotropic time= 1 rate= {0.2}
