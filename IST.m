@@ -67,3 +67,15 @@ Vth_des = Vth/k_factor;
 % Ids_line = Ids0 + gm*Vgs;
 % 
 %  plot(Vgs,Ids_line,'Linewidth',2)
+
+%%
+clc
+close all
+
+%plot(VGS,IDS,'Linewidth',2)
+hold on
+IDS_sqrt = sqrt(IDS);
+%plot(VGS,IDS_sqrt,'Linewidth',2)
+plot(VGS(10:end-1),diff(sqrt(IDS(10:end))),'Linewidth',2);
+hold on
+max(diff(sqrt(IDS(10:end))))
