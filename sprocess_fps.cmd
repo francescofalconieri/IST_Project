@@ -174,6 +174,8 @@ struct tdr= 22_Nickel_diffuse ; #
 
 strip Nickel
 struct tdr= 23_Strip_Nickel ; #
+pdbSet Grid AnisotropicGrowth 0
+pdbSet Grid Adaptive 1
 #-----------------------------------------------------------------------------------
 
 #------------------- START GATE STACK ----------------------------------------------
