@@ -116,8 +116,8 @@ Vth_foo1 = @(EOT,Na) (PhiM - vt.*log(Na./ni) - X - 0.5*Egap) + ...
 xd_SI_foo = @(Na) sqrt((2*er_Si*eps*2*vt*log(Na./ni))./(q.*Na))*1e-2;
 
                   
-EOT_space = linspace(3e-10,10e-9,100);
-Tox_space = (EOT_space-dlatt_SiO2)*(er_SiO2/er_HfO2)+dlatt_SiO2;
+EOT_space = linspace(3e-10,2e-9,100);
+Tox_space = (EOT_space-dlatt_SiO2)*(er_HfO2/er_SiO2)+dlatt_SiO2;
 Na_space = logspace(15,20,100);
 xd_space = xd_SI_foo(Na_space);
 
@@ -129,7 +129,7 @@ Vth_Z = Vth_foo1(EOTX1,NaY1);
 
 Tox_input = 3e-9;   %Insert here the desired Total Dielectric Thickness
 Vth_input = 0.35;   %Insert here the desired threshold voltage
-EOT_input = dlatt_SiO2 + (Tox_input-dlatt_SiO2)*er_HfO2/er_SiO2;
+EOT_input = dlatt_SiO2 + (Tox_input-dlatt_SiO2)*er_SiO2/er_HfO2;
 
 
 figure()
