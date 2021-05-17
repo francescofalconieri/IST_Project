@@ -1,0 +1,13 @@
+------------------ MOSFET PARAMETERS EXTRACTION V1 -------------------
+--> Rout = 14190.210 Ohm/um
+--> Ron = 1018.024 Ohm/um
+--> VEarly = -0.874 V
+--> Vth (gm method, Vds=Vdd) = 0.510
+--> Ith (Ids @ Vgs=Vth) = 24129.192 nA/um
+--> Gm = 580.712 uS/um
+--> Ion = 110.626 uA/um
+--> Ioff = 0.827817 nA/um
+--> Ig = 0.000052621 pA/um
+--> Vth (Ith method, Vds=Vds,lin) = 0.700
+--> DIBL = -280.147 mV/V
+--> SS = 98.968 V/dec
