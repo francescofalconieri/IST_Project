@@ -6,6 +6,6 @@
 	- **sdevice.cmd** command files to simulate the device with *Sentaurus Device*;
 	
 - [scripts](https://github.com/francescofalconieri/IST_Project/tree/main/IST_HOMEWORK/scripts) subdirectory contains:
-	- *Matlab* script used in the Design step;
+	- *Matlab* script used during the Design phase;
 	- *SVISUAL* tcl scripts to plot the output characteristics and extract the device's parameters;	
 	
