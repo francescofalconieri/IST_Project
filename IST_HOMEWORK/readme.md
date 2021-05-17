@@ -1,4 +1,4 @@
-### This directory is organized in two subdirectory containing all the necessary files used to design, fabricate and verify the transistor.
+### This directory is organized in two subdirectories containing all the necessary files used to design, fabricate and verify the transistor.
 - [Sentaurus_files](https://github.com/francescofalconieri/IST_Project/tree/main/IST_HOMEWORK/Sentaurus_files) subdirectory contains:
 	- Project file;
 	- **gtree.dat** file that lists the variables used in the simulation flow and the scenarios created in the simulation tree;
