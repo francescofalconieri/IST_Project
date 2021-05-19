@@ -3,10 +3,11 @@
 	- Project file;
 	- **gtree.dat** file that lists the variables used in the simulation flow and the scenarios created in the simulation tree;
 	- **sprocess_fps.cmd** command file to fabricate the transistor using *Sentaurus Process*;
-	- **sdevice.cmd** command files to simulate the device with *Sentaurus Device*;
+	- **sdevice_IDSvsVDS.cmd** command files to simulate the device either with V_{GS}= V_{DD} and V_{GS} = 0 using *Sentaurus Device*;
+	- **sdevice_IDSvsVGS.cmd** command files to simulate the device either with V_{DS}= V_{DD} and V_{DS} = V_{DS,lin} using *Sentaurus Device*;
 	- **sdevice.par** file to set the parameters and models for the process simulation;
 	
 - [scripts](https://github.com/francescofalconieri/IST_Project/tree/main/IST_HOMEWORK/scripts) subdirectory contains:
-	- *Matlab* script used during the Design phase;
+	- *Matlab* script used during the Device Design phase;
 	- *SVISUAL* tcl scripts to plot the output characteristics and extract the device's parameters;	
 	
