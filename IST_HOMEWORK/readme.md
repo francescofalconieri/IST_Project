@@ -3,8 +3,8 @@
 	- Project file;
 	- **gtree.dat** file that lists the variables used in the simulation flow and the scenarios created in the simulation tree;
 	- **sprocess_fps.cmd** command file to fabricate the transistor using *Sentaurus Process*;
-	- **sdevice_IDSvsVDS.cmd** command files to simulate the device either with V<sup>GS</sup>= V<sup>DD</sup> and V<sup>GS</sup> = 0 using *Sentaurus Device*;
-	- **sdevice_IDSvsVGS.cmd** command files to simulate the device either with V<sup>DS</sup>= V<sup>DD</sup> and V<sup>DS</sup>} = V<sup>DS,lin</sup> using *Sentaurus Device*;
+	- **sdevice_IDSvsVDS.cmd** command files to simulate the device either with V<sup>GS</sub>= V<sup>DD</sub> and V<sup>GS</sub> = 0 using *Sentaurus Device*;
+	- **sdevice_IDSvsVGS.cmd** command files to simulate the device either with V<sup>DS</sub>= V<sup>DD</sub> and V<sup>DS</sub> = V<sup>DS,lin</sub> using *Sentaurus Device*;
 	- **sdevice.par** file to set the parameters and models for the process simulation;
 	
 - [scripts](https://github.com/francescofalconieri/IST_Project/tree/main/IST_HOMEWORK/scripts) subdirectory contains:
